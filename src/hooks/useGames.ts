@@ -16,6 +16,8 @@ export interface Game {
         platform: Platform
     }[];
     metacritic: number
+    rating_top: number;
+    rating: number
 }
 
 const useGames = (gameQuery: GameQuery) => useData<Game>('/games', {
